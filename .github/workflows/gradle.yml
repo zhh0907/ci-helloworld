@@ -34,10 +34,12 @@ jobs:
       - name: Run Test Coverage
         run: ./gradlew jacocoTestReport
       - name: Jacoco
-        uses: cicirello/jacoco-badge-generator@v2.9.0
+        uses: cicirello/jacoco-badge-generator@v2.11.0
         with:
           jacoco-csv-file: build/reports/jacoco/test/jacocoTestReport.csv
           fail-if-branches-less-than: 100
+          fail-if-coverage-less-than-previous: true
+          generate-branches-badge: true
 
   build_and_publish_docker_image:
     name: Publish to Docker Hub

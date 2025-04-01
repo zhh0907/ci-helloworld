@@ -53,7 +53,7 @@ public class ArrayUtilsTest {
         assertEquals(0, ArrayUtils.countOf(new int[]{}, 1));
         assertEquals(0, ArrayUtils.countOf(new int[]{1, 2, 3}, 4));
         assertEquals(1, ArrayUtils.countOf(new int[]{1, 2, 3}, 2));
-        assertEquals(3, ArrayUtils.countOf(new int[]{5, 5, 1, 5}, 5)); 
+        assertEquals(3, ArrayUtils.countOf(new int[]{5, 5, 1, 5}, 5));
     }
 
 }
